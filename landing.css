@@ -15,12 +15,14 @@ html, body {
   font-family: 'Poppins', -apple-system, system-ui, sans-serif;
   color: var(--text);
   overflow: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* ---- Animated gradient background ---- */
 .landing {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,6 +218,41 @@ html, body {
 
 @media (max-width: 600px) {
   html, body { overflow: auto; }
-  .landing { min-height: 100vh; }
-  .orb { filter: blur(40px); }
+  .landing {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 1.5rem 1.25rem;
+  }
+  .orb { filter: blur(40px); opacity: 0.45; }
+  .orb-1 { width: 260px; height: 260px; top: -60px; left: -60px; }
+  .orb-2 { width: 320px; height: 320px; bottom: -100px; right: -80px; }
+  .orb-3 { width: 220px; height: 220px; }
+
+  .eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  .hero h1 { letter-spacing: -1px; }
+  .typewriter-line {
+    min-height: 4em;       /* allow phrases to wrap to 2 lines */
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+  }
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .cta-button {
+    justify-content: center;
+    padding: 0.95rem 1.5rem;
+    font-size: 1rem;
+  }
+  .scroll-hint {
+    bottom: 1rem;
+    font-size: 0.7rem;
+  }
 }
