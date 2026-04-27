@@ -12,27 +12,7 @@
   --radius: 10px;
 }
 
-html[data-theme="dark"] {
-  --bg: #111815;
-  --surface: #1a2520;
-  --text: #e2ede6;
-  --text-muted: #7a9e87;
-  --accent: #52b788;
-  --accent-soft: #1a3326;
-  --border: #2c3d32;
-  --shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
-  --star: #52b788;
-  --star-empty: #2c3d32;
-}
-
 * { box-sizing: border-box; }
-
-/* Smooth colour transitions when toggling theme */
-body, .site-header, .book-card, .book-cover, .modal-content,
-.search-input, .filter-group select, .nav-button, .genre-tag,
-.back-link, .article-content, .pull-quote, .favorite-quote {
-  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.2s ease;
-}
 
 html, body {
   margin: 0;
@@ -55,30 +35,6 @@ html, body {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border);
   background: linear-gradient(180deg, #f4faf6 0%, var(--bg) 100%);
-  position: relative;
-}
-html[data-theme="dark"] .site-header {
-  background: linear-gradient(180deg, #141f17 0%, var(--bg) 100%);
-}
-
-.theme-toggle {
-  position: absolute;
-  top: 1rem;
-  right: 1.25rem;
-  padding: 0.35rem 0.85rem;
-  border-radius: 999px;
-  border: 1.5px solid var(--border);
-  background: transparent;
-  color: var(--text-muted);
-  font-size: 0.8rem;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
-  white-space: nowrap;
-}
-.theme-toggle:hover {
-  border-color: var(--accent);
-  color: var(--accent);
 }
 
 .home-link {
@@ -175,10 +131,6 @@ html[data-theme="dark"] .site-header {
   border-color: #b6d4c1;
 }
 
-html[data-theme="dark"] .book-cover {
-  background: linear-gradient(135deg, #1a3326 0%, #2a4a38 100%);
-}
-
 .book-cover {
   background: linear-gradient(135deg, #e3f0e8 0%, #b6d4c1 100%);
   border-radius: 6px;
@@ -256,9 +208,6 @@ html[data-theme="dark"] .book-cover {
   background: rgba(20, 18, 14, 0.55);
   backdrop-filter: blur(2px);
 }
-html[data-theme="dark"] .modal-backdrop {
-  background: rgba(0, 0, 0, 0.72);
-}
 
 .modal-content {
   position: relative;
@@ -332,7 +281,6 @@ html[data-theme="dark"] .modal-backdrop {
   color: #1f4030;
   border-radius: 0 6px 6px 0;
 }
-html[data-theme="dark"] .favorite-quote { color: #a8cdb8; }
 
 /* ---- Article view (Medium-style) ---- */
 .article-view {
@@ -396,7 +344,6 @@ html[data-theme="dark"] .favorite-quote { color: #a8cdb8; }
   color: #2a3a30;
   margin-top: 2rem;
 }
-html[data-theme="dark"] .article-content { color: #c8ddd0; }
 
 .article-content p { margin: 0 0 1.5em; }
 
@@ -436,7 +383,6 @@ html[data-theme="dark"] .article-content { color: #c8ddd0; }
   font-size: 1.15rem;
   line-height: 1.6;
 }
-html[data-theme="dark"] .pull-quote { color: #a8cdb8; }
 .pull-quote .quote-label {
   display: block;
   font-style: normal;

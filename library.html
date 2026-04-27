@@ -4,12 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Noah's Book Reviews</title>
-  <script>
-    (function(){
-      var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-      document.documentElement.setAttribute('data-theme',t);
-    })();
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
@@ -19,7 +13,6 @@
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="home-link" aria-label="Back to home">&larr; Home</a>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">Dark mode</button>
       <h1 class="site-title"><a href="index.html">Noah's Book Reviews</a></h1>
       <p class="site-tagline">A personal shelf of books worth reading — and a few thoughts on each.</p>
     </div>
@@ -93,6 +86,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script src="theme.js"></script>
 </body>
 </html>
