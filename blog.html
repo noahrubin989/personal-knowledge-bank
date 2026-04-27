@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noah's Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="home-link" aria-label="Back to home">&larr; Home</a>
+      <h1 class="site-title"><a href="blog.html">Noah's Blog</a></h1>
+      <p class="site-tagline">Longer-form notes on what I've been thinking about and learning.</p>
+    </div>
+  </header>
+
+  <main class="container" id="blog-view">
+    <section class="controls">
+      <input
+        type="search"
+        id="search"
+        class="search-input"
+        placeholder="Search posts…"
+        aria-label="Search posts"
+      />
+      <div class="filter-group">
+        <label for="tag-filter">Tag:</label>
+        <select id="tag-filter" aria-label="Filter by tag">
+          <option value="">All</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="sort">Sort:</label>
+        <select id="sort" aria-label="Sort posts">
+          <option value="recent">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="title">Title (A–Z)</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="post-grid" class="book-grid" aria-live="polite"></section>
+
+    <p id="empty-state" class="empty-state" hidden>No posts match your filters.</p>
+  </main>
+
+  <main class="container article-view" id="article-view" hidden>
+    <nav class="article-nav-top" aria-label="Article navigation">
+      <a href="#" class="back-link" id="back-link">&larr; Back to all posts</a>
+    </nav>
+    <article id="article-body" class="article"></article>
+    <nav class="article-nav-bottom" aria-label="More posts">
+      <a href="#" class="nav-button" id="prev-link" hidden>&larr; <span></span></a>
+      <a href="#" class="nav-button center" id="blog-link">All posts</a>
+      <a href="#" class="nav-button" id="next-link" hidden><span></span> &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built by Noah. Add your own posts in <code>posts.js</code>.</p>
+    </div>
+  </footer>
+
+  <script src="posts.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>
