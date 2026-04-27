@@ -9,6 +9,15 @@
 // =============================================================
 const posts = [
   {
+    title: "Fluid vs Crystallised Intelligence",
+    date: "2026-04-27",
+    tags: ["Mental Models"],
+    excerpt: "Two kinds of smarts: the reasoning you bring to new problems, and the knowledge you've stockpiled over a lifetime.",
+    body: `Fluid intelligence involves the ability to reason and think flexibly, whereas crystallised intelligence refers to the accumulation of knowledge, facts, and skills that are acquired throughout life.
+
+![Fluid vs crystallised intelligence](assets/images/posts/head.png)`
+  },
+  {
     title: "Perverse Incentives",
     date: "2026-04-27",
     tags: ["Mental Models"],
@@ -21,7 +30,7 @@ Two really evident examples come to mind:
 
 ### Cobra effect
 
-The British government were concerned about the number of venomous cobras in Delhi, hence they offered a bounty for every cobra killed. Initially this was successful, with large numbers of snakes killed for the reward. However, entrepreneurs began breeding cobras specifically to claim the bounty. When the government cancelled the programme, the now worthless snakes were released into the wild, exacerbating the problem significantly beyond its original scale.
+The British government (during the colonial British Raj period) were concerned about the number of venomous cobras in Delhi, hence they offered a bounty for every cobra killed. Initially this was successful, with large numbers of snakes killed for the reward. However, entrepreneurs began breeding cobras specifically to claim the bounty. When the government cancelled the programme, the now worthless snakes were released into the wild, exacerbating the problem significantly beyond its original scale.
 
 ![](assets/images/posts/snake.jpeg)
 
