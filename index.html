@@ -7,83 +7,83 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="landing.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="site-title">Noah's Book Reviews</h1>
-      <p class="site-tagline">A personal shelf of books worth reading — and a few thoughts on each.</p>
+  <section class="landing">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero">
+      <span class="eyebrow">A Personal Library</span>
+      <h1>Noah's Book Reviews</h1>
+      <p class="typewriter-line">
+        <span id="typewriter" aria-live="polite"></span><span class="cursor" aria-hidden="true"></span>
+      </p>
+      <div class="cta-row">
+        <a href="library.html" class="cta-button">
+          Browse the library <span class="arrow">&rarr;</span>
+        </a>
+        <a href="https://github.com/noahrubin989/book-reviews" class="cta-button ghost" target="_blank" rel="noopener">
+          View on GitHub
+        </a>
+      </div>
     </div>
-  </header>
 
-  <main class="container" id="library-view">
-    <section class="controls">
-      <input
-        type="search"
-        id="search"
-        class="search-input"
-        placeholder="Search by title, author, or genre…"
-        aria-label="Search books"
-      />
-      <div class="filter-group">
-        <label for="genre-filter">Genre:</label>
-        <select id="genre-filter" aria-label="Filter by genre">
-          <option value="">All</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label for="rating-filter">Min rating:</label>
-        <select id="rating-filter" aria-label="Filter by minimum rating">
-          <option value="0">Any</option>
-          <option value="3">3+ stars</option>
-          <option value="4">4+ stars</option>
-          <option value="5">5 stars</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label for="sort">Sort:</label>
-        <select id="sort" aria-label="Sort books">
-          <option value="recent">Recently reviewed</option>
-          <option value="rating-desc">Rating (high to low)</option>
-          <option value="rating-asc">Rating (low to high)</option>
-          <option value="title">Title (A–Z)</option>
-          <option value="author">Author (A–Z)</option>
-        </select>
-      </div>
-    </section>
+    <p class="scroll-hint">Curated by Noah</p>
+  </section>
 
-    <section id="book-grid" class="book-grid" aria-live="polite"></section>
+  <script>
+    (function () {
+      const phrases = [
+        "Find your next great read.",
+        "Honest reviews. No spoilers.",
+        "From classics to science fiction.",
+        "Books worth your time.",
+        "One reader's shelf, opened up."
+      ];
 
-    <p id="empty-state" class="empty-state" hidden>No books match your filters.</p>
-  </main>
+      const el = document.getElementById('typewriter');
+      const TYPE_MS = 70;
+      const DELETE_MS = 35;
+      const PAUSE_AFTER_TYPE = 1700;
+      const PAUSE_AFTER_DELETE = 350;
 
-  <main class="container article-view" id="article-view" hidden>
-    <nav class="article-nav-top" aria-label="Article navigation">
-      <a href="#" class="back-link" id="back-link">&larr; Back to all reviews</a>
-    </nav>
-    <article id="article-body" class="article"></article>
-    <nav class="article-nav-bottom" aria-label="More reviews">
-      <a href="#" class="nav-button" id="prev-link" hidden>&larr; <span></span></a>
-      <a href="#" class="nav-button center" id="library-link">All reviews</a>
-      <a href="#" class="nav-button" id="next-link" hidden><span></span> &rarr;</a>
-    </nav>
-  </main>
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let deleting = false;
 
-  <div id="modal" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal-backdrop" data-close></div>
-    <article class="modal-content">
-      <button class="modal-close" data-close aria-label="Close">&times;</button>
-      <div id="modal-body"></div>
-    </article>
-  </div>
+      function tick() {
+        const phrase = phrases[phraseIndex];
+        if (!deleting) {
+          charIndex++;
+          el.textContent = phrase.slice(0, charIndex);
+          if (charIndex === phrase.length) {
+            deleting = true;
+            return setTimeout(tick, PAUSE_AFTER_TYPE);
+          }
+          return setTimeout(tick, TYPE_MS);
+        } else {
+          charIndex--;
+          el.textContent = phrase.slice(0, charIndex);
+          if (charIndex === 0) {
+            deleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            return setTimeout(tick, PAUSE_AFTER_DELETE);
+          }
+          return setTimeout(tick, DELETE_MS);
+        }
+      }
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>Built by Noah. Add your own books in <code>script.js</code>.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+      // Respect reduced-motion users: just show the first phrase, no animation.
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduceMotion) {
+        el.textContent = phrases[0];
+      } else {
+        setTimeout(tick, 600);
+      }
+    })();
+  </script>
 </body>
 </html>
