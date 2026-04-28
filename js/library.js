@@ -1,4 +1,4 @@
-// Book data lives in data/books.js — `books` is loaded as a global before this file.
+// Book data lives in data/books.js - `books` is loaded as a global before this file.
 const grid = document.getElementById('book-grid');
 const emptyState = document.getElementById('empty-state');
 const searchInput = document.getElementById('search');
@@ -146,7 +146,7 @@ function renderArticle(index) {
   const content = book.fullReview || book.review;
   const note = book.fullReview
     ? ''
-    : `<p style="color: var(--text-muted); font-style: italic; margin-bottom: 1.5rem;">A longer breakdown for this book is coming soon — here's the short take in the meantime.</p>`;
+    : `<p style="color: var(--text-muted); font-style: italic; margin-bottom: 1.5rem;">A longer breakdown for this book is coming soon - here's the short take in the meantime.</p>`;
 
   articleBody.innerHTML = `
     <header>
@@ -202,7 +202,7 @@ function showArticle(index) {
   articleView.hidden = false;
   renderArticle(index);
   const book = books[index];
-  if (book) document.title = `${book.title} — Noah's Book Reviews`;
+  if (book) document.title = `${book.title} - Noah's Book Reviews`;
   window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
 }
 

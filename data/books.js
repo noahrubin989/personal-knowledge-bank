@@ -11,7 +11,7 @@ const books = [
     rating: 5,
     pages: 409,
     yearRead: 2024,
-    review: `Add your short review here — a paragraph or two that shows up in the modal preview.`
+    review: `Add your short review here - a paragraph or two that shows up in the modal preview.`
   },
   {
     title: "The Psychology of Money",
@@ -20,7 +20,7 @@ const books = [
     rating: 5,
     pages: 256,
     yearRead: 2024,
-    review: `Add your short review here — a paragraph or two that shows up in the modal preview.`
+    review: `Add your short review here - a paragraph or two that shows up in the modal preview.`
   },
   {
     title: "Same as Ever",
@@ -29,6 +29,6 @@ const books = [
     rating: 5,
     pages: 240,
     yearRead: 2024,
-    review: `Add your short review here — a paragraph or two that shows up in the modal preview.`
+    review: `Add your short review here - a paragraph or two that shows up in the modal preview.`
   }
 ];

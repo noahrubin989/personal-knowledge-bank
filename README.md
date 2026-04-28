@@ -1,6 +1,6 @@
 # Noah's Book Reviews
 
-A personal book review site — a curated shelf of books worth reading, with honest reviews and full breakdowns.
+A personal book review site - a curated shelf of books worth reading, with honest reviews and full breakdowns.
 
 **Live site:** https://noahrubin989.github.io/book-reviews/
 
@@ -15,8 +15,8 @@ A personal book review site — a curated shelf of books worth reading, with hon
 │   ├── landing.css
 │   └── styles.css    # shared library + blog styles
 ├── data/
-│   ├── books.js      # book reviews — edit this to add a book
-│   └── posts.js      # blog posts — edit this to add a post
+│   ├── books.js      # book reviews - edit this to add a book
+│   └── posts.js      # blog posts - edit this to add a post
 └── js/
     ├── library.js    # library logic
     └── blog.js       # blog logic

@@ -166,7 +166,7 @@ function showArticle(index) {
   articleView.hidden = false;
   renderArticle(index);
   const post = posts[index];
-  if (post) document.title = `${post.title} — Noah's Blog`;
+  if (post) document.title = `${post.title} - Noah's Blog`;
   window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
 }
 

@@ -12,8 +12,8 @@ const posts = [
     title: "A note on simplicity",
     date: "2026-04-28",
     tags: ["Blog Post"],
-    excerpt: "A handful of core principles tend to drive most of the outcome — in fitness, finance, friendship, and just about everywhere else.",
-    body: `> What you need to do is identify the core principles — generally 3-12 of them that govern the field. The million things you thought you had to memorise are simply combinations of the core principles. — John Reed, Succeeding
+    excerpt: "A handful of core principles tend to drive most of the outcome - in fitness, finance, friendship, and just about everywhere else.",
+    body: `> What you need to do is identify the core principles - generally 3-12 of them that govern the field. The million things you thought you had to memorise are simply combinations of the core principles. - John Reed, Succeeding
 
 Does the perceived complexity of a subject matter or goal hold us back, either from getting started or staying motivated enough to continue?
 
@@ -77,7 +77,7 @@ Hanoi, Vietnam, under French colonial rule (circa 1902) had a similar problem, b
     excerpt: "A quiet corner for longer-form notes that don't fit in a book review.",
     body: `## Why a blog?
 
-The library is for books. This is for everything else — ideas I've been mulling over, things I've learned, notes I want to be able to find again later.
+The library is for books. This is for everything else - ideas I've been mulling over, things I've learned, notes I want to be able to find again later.
 
 Think of it as one centralised place for the knowledge I've picked up over the years.
 
