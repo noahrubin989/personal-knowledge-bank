@@ -65,10 +65,22 @@ function applyFilters() {
     });
 
   switch (sort) {
-    case 'oldest': filtered.sort((a, b) => (a.date || '').localeCompare(b.date || '')); break;
-    case 'title':  filtered.sort((a, b) => a.title.localeCompare(b.title)); break;
+    case 'oldest':
+      filtered.sort((a, b) => {
+        const cmp = (a.date || '').localeCompare(b.date || '');
+        return cmp !== 0 ? cmp : b._index - a._index;
+      });
+      break;
+    case 'title':
+      filtered.sort((a, b) => a.title.localeCompare(b.title));
+      break;
     case 'recent':
-    default:       filtered.sort((a, b) => (b.date || '').localeCompare(a.date || '')); break;
+    default:
+      filtered.sort((a, b) => {
+        const cmp = (b.date || '').localeCompare(a.date || '');
+        return cmp !== 0 ? cmp : a._index - b._index;
+      });
+      break;
   }
 
   if (filtered.length === 0) {
@@ -91,6 +103,11 @@ function renderArticleBody(text) {
     const img = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
     if (img) {
       return `<figure class="post-figure"><img src="${escapeHtml(img[2])}" alt="${escapeHtml(img[1])}" loading="lazy">${img[1] ? `<figcaption>${escapeHtml(img[1])}</figcaption>` : ''}</figure>`;
+    }
+    const lines = trimmed.split('\n');
+    if (lines.every(l => /^- /.test(l))) {
+      const items = lines.map(l => `<li>${escapeHtml(l.slice(2))}</li>`).join('');
+      return `<ul>${items}</ul>`;
     }
     return `<p>${escapeHtml(trimmed).replace(/\n/g, '<br>')}</p>`;
   }).join('');
