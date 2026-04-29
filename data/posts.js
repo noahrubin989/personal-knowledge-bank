@@ -9,6 +9,29 @@
 // =============================================================
 const posts = [
   {
+    title: "I Have To vs I Get To",
+    date: "2026-04-29",
+    tags: ["Mental Models"],
+    excerpt: "A small but powerful reframing — swap 'I have to' for 'I get to' and watch the paradigm shift.",
+    body: `> "Everything can be taken from a man but one thing: the last of the human freedoms - to choose one's attitude in any given set of circumstances." - Viktor Frankl, Man's Search for Meaning
+
+This isn't toxic positivity but rather, a small but very powerful cognitive reframing technique to put things into perspective occasionally.
+
+…And a reminder of just how good you have it.
+
+The *'I have to'* way of thinking vs the *'I get to'* way of thinking.
+
+One connotes stress, resentment and frustration. The other shifts the paradigm completely - encouraging you to focus on opportunity and privilege.
+
+Here are some examples:
+
+- *I have to go to the gym today* → **I get to go to the gym today** *(somewhere, someone physically can't)*
+- *I have to go to work* → **I get to go to work** *(a job, an income, a sense of purpose)*
+- *I have to cook dinner* → **I get to cook dinner** *(food on the table, a home to cook in)*
+
+Perspective is everything.`
+  },
+  {
     title: "My Opinion on Vibe Coding",
     date: "2026-04-29",
     tags: ["Blog Post"],
