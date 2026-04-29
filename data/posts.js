@@ -9,7 +9,7 @@
 // =============================================================
 const posts = [
   {
-    title: "The biggest influences on your life",
+    title: "The biggest influences on your life are the people who are only about 1 to 2 steps ahead of you",
     date: "2026-04-29",
     tags: ["Mental Models"],
     excerpt: "The most useful role models are the ones 1–2 steps ahead of you.",
