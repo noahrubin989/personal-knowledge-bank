@@ -18,11 +18,11 @@ const posts = [
 The most inspiring role models are those not necessarily at the apex of their domain, but rather those who provide a realistic enough image of who you can be:
 
 - Not the supermodel, but the guy/girl who's been training just slightly longer than you and has an above-average physique that you see as genuinely attainable
-- Not the billionaire, but the relative who just started their first business
+- Not the billionaire, but the relative who just started their first business, or that older cousin who got a promotion at work in a career path that you're aspiring to get into
 - Not the professor, but that UNI acquaintance who understands the coursework just enough to teach it in a way that finally clicks
 - Not the linguist, but that friend of yours who can speak a little bit more of a foreign language than you can
 
-These people might not offer perfection, but they do offer proximity. In a sense it's proof that where you want to be is genuinely reachable.
+These people might not offer perfection, but they do offer proximity. In a sense it's proof that the first step/few steps on your journey to where you want to be is genuinely reachable.
 
 An antidote to inaction.`
   },
