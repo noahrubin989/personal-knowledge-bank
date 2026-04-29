@@ -9,6 +9,24 @@
 // =============================================================
 const posts = [
   {
+    title: "The biggest influences on your life are the people who are only about 1 to 2 steps ahead of you",
+    date: "2026-04-29",
+    tags: ["Mental Models"],
+    excerpt: "The most useful role models are the ones 1–2 steps ahead of you.",
+    body: `**Opinion:**
+
+The most inspiring role models are those not necessarily at the apex of their domain, but rather those who provide a realistic enough image of who you can be:
+
+- Not the supermodel, but the guy/girl who's been training just slightly longer than you and has an above-average physique that you see as genuinely attainable
+- Not the billionaire, but the relative who just started their first business
+- Not the professor, but that friend of yours who understands the coursework just enough to teach it in a way that finally clicks
+- Not the linguist, but that friend of yours who can speak a little bit more of a foreign language than you can
+
+What these people offer isn't perfection but rather proximity. In a sense proof that where you want to be is genuinely reachable.
+
+An antidote to inaction.`
+  },
+  {
     title: "I Have To vs I Get To",
     date: "2026-04-29",
     tags: ["Mental Models"],
