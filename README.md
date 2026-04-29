@@ -1,8 +1,8 @@
-# Noah's Book Reviews
+# Personal Knowledge Bank
 
-A personal book review site - a curated shelf of books worth reading, with honest reviews and full breakdowns.
+A personal blog and knowledge collection - longer-form notes on mental models and ideas worth keeping, alongside a shelf of books that have shaped the thinking.
 
-**Live site:** https://noahrubin989.github.io/book-reviews/
+**Live site:** https://noahrubin989.github.io/personal-knowledge-bank/
 
 ## What's inside
 
