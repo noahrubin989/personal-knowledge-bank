@@ -13,9 +13,9 @@ const posts = [
     date: "2026-04-29",
     tags: ["Blog Post"],
     excerpt: "The barrier to building has never been lower, but fundamentals matter more than ever.",
-    body: `April 2026. These views are likely to get outdated fast, but here is a short stream of consciousness around what I have experienced around the current state of 'vibe coding', a term popularised around early 2025 around the usage and reliance on LLMs to generate, refine and ship code.
+    body: `**April 2026:**\nThese views are likely to get outdated fast, but here is a short stream of consciousness around what I have experienced around the current state of 'vibe coding', a term popularised around early 2025 around the usage and reliance on LLMs to generate, refine and ship code.
 
-## 1. The bar of entry has never been set lower
+## 1. The bar to get started has never been set lower
 
 The gap between imagination and implementation has never been slimmer. If you are someone with a vision who is motivated enough to start, in terms of prototyping an idea and developing a proof of concept (POC), the barrier is no longer whether you can code or not. That's simply been taken away, and the exploratory and early implementation phase of an idea has never been more democratised.
 

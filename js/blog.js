@@ -92,6 +92,10 @@ function applyFilters() {
   }
 }
 
+function inlineBold(escaped) {
+  return escaped.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+}
+
 function renderArticleBody(text) {
   const blocks = text.split(/\n\s*\n/);
   return blocks.map(block => {
@@ -99,17 +103,17 @@ function renderArticleBody(text) {
     if (!trimmed) return '';
     if (trimmed.startsWith('## ')) return `<h2>${escapeHtml(trimmed.slice(3))}</h2>`;
     if (trimmed.startsWith('### ')) return `<h3>${escapeHtml(trimmed.slice(4))}</h3>`;
-    if (trimmed.startsWith('> ')) return `<blockquote>${escapeHtml(trimmed.slice(2))}</blockquote>`;
+    if (trimmed.startsWith('> ')) return `<blockquote>${inlineBold(escapeHtml(trimmed.slice(2)))}</blockquote>`;
     const img = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
     if (img) {
       return `<figure class="post-figure"><img src="${escapeHtml(img[2])}" alt="${escapeHtml(img[1])}" loading="lazy">${img[1] ? `<figcaption>${escapeHtml(img[1])}</figcaption>` : ''}</figure>`;
     }
     const lines = trimmed.split('\n');
     if (lines.every(l => /^- /.test(l))) {
-      const items = lines.map(l => `<li>${escapeHtml(l.slice(2))}</li>`).join('');
+      const items = lines.map(l => `<li>${inlineBold(escapeHtml(l.slice(2)))}</li>`).join('');
       return `<ul>${items}</ul>`;
     }
-    return `<p>${escapeHtml(trimmed).replace(/\n/g, '<br>')}</p>`;
+    return `<p>${inlineBold(escapeHtml(trimmed)).replace(/\n/g, '<br>')}</p>`;
   }).join('');
 }
 
