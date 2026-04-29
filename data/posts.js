@@ -22,7 +22,7 @@ The most inspiring role models are those not necessarily at the apex of their do
 - Not the professor, but that UNI acquaintance who understands the coursework just enough to teach it in a way that finally clicks
 - Not the linguist, but that friend of yours who can speak a little bit more of a foreign language than you can
 
-What these people offer isn't perfection but rather proximity. In a sense it's proof that where you want to be is genuinely reachable.
+These people might not offer perfection, but they do offer proximity. In a sense it's proof that where you want to be is genuinely reachable.
 
 An antidote to inaction.`
   },
