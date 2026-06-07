@@ -9,6 +9,23 @@
 // =============================================================
 const posts = [
   {
+    title: "First Principles Thinking",
+    date: "2026-06-07",
+    tags: ["Mental Models"],
+    excerpt: "Distilling a complex system to its constituent elements - the antidote to rote learning and reasoning by analogy.",
+    body: `First principles thinking is taking a complex system and distilling it to its constituent elements. It's an antidote to rote learning and reasoning by analogy, and forces you to identify what is known to be true, and derive conclusions from that solid foundation.
+
+Naval Ravikant has a great tweet around this, back from 2016:
+
+> To think clearly, understand the basics. If you are memorising advanced concepts without being able to re-derive them as needed, you are lost
+
+Mathematics captures the essence of this exactly. Every concept can be broken into its fundamental elements and re-derived as needed. Multivariable calculus is built on single variable calculus. Calculus is built on algebra and trigonometry, itself built on arithmetic.
+
+It's how Elon was able to reduce the price of batteries with Tesla ([see here](https://youtu.be/NV3sBlRgzTI)), and why Richard Feynman was famous for reconstructing entire fields of maths and physics, refusing to accept the methods that produced correct answers at face value.
+
+First principles thinking is the test of whether you understand something to its true roots, or are relying on analogy, convention, or the status quo.`
+  },
+  {
     title: "The biggest influences on your life are the people who are only about 1 to 2 steps ahead of you",
     date: "2026-04-29",
     tags: ["Blog Post"],
