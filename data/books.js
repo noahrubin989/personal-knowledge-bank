@@ -45,6 +45,16 @@ It sounds like a paradox, but it's true: our helplessness as infants is one of t
 
 Back in our hunter-gatherer days, a lone mother simply couldn't hunt, forage, and watch for predators while also caring for a helpless infant. Raising a child took a village - literally. So evolution favoured those who could form strong social bonds, cooperate, and share the load of raising the next generation.
 
-But why were humans born underdeveloped? That's brings us to our next insight...`
+But why were humans born underdeveloped? That's brings us to our next insight...
+
+## 2. We're born underdeveloped because we walk upright
+
+So why are human babies born so underdeveloped in the first place? One widely cited theory ties it back to another human trait: walking on two legs.
+
+Human bipedalism (the ability to walk upright) is thought to have evolved partly to help our ancestors scan the terrain for predators and free up their limbs for signalling, hunting, and defence. But this evolutionary upgrade may have come with a serious downside.
+
+Walking upright required a narrower pelvis. Yet at the same time, the human brain was growing bigger and bigger. This set up a collision: a narrowing birth canal versus a growing head trying to pass through it.
+
+The "solution" evolution landed on was to shift the timing of birth itself. Women who gave birth earlier, while the infant's brain and skull were still small and pliable, survived childbirth more often and had more children. Over generations, this trait was passed on, and "premature" birth became the human norm.`
   }
 ];
